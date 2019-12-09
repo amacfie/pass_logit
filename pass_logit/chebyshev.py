@@ -1,3 +1,13 @@
+'''
+uses code from
+
+https://bitbucket.org/jhhuggins/pass-glm
+
+License: MIT License (MIT)
+
+Author: Jonathan Huggins
+'''
+
 import math
 import numpy as np
 from numpy.polynomial import chebyshev, Chebyshev, Polynomial
