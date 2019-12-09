@@ -25,7 +25,7 @@ U-Turn Sampler.
 
 Parameters:
 
-Either 
+Either
 `labeled_points` is `None` or
 `xs` is `None` and `ys` is `None`.
 If `labeled_points` is `None`, then PySpark is not used (no Spark installation
@@ -41,7 +41,7 @@ required).
 * `R`. Radius of interval used to determine Chebyshev polynomial.
 
 The paper suggests that `R`=4 is appropriate for many datasets. The error
-of the approximate log likelihood can be high if its argument is 
+of the approximate log logistic function can be high if its argument is
 roughly `R` or greater (in absolute value).
 Greater `R` values give a wider interval in which error is small but cause
 greater error within the interval.
