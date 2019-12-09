@@ -29,6 +29,7 @@ def get_suff_stats(
     elif data_format == 'Python':
         return np.sum([
             [
+                # `xs` needs to be Numpy array or this will do wrong operation
                 np.prod(np.power(y * x, monomial_exp))
                 for monomial_exp in monomial_exponents
             ]
