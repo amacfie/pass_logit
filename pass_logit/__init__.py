@@ -1,13 +1,5 @@
-'''
-TODO:
-* improve code quality somewhat
-* sparse version
-* docs
-    * labels +-1
-'''
-
-from chebyshev import chebyshev_approximation
-import compositions
+from pass_logit.chebyshev import chebyshev_approximation
+from pass_logit import compositions
 
 from collections import ChainMap
 
