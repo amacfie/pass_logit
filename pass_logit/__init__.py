@@ -66,7 +66,6 @@ def get_approx_log_like_op(
 
     theta_ks = tt.prod((theta**tt.as_tensor(monomial_exponents)), axis=1) 
 
-
     loglike_var = tt.dot(theta_ks, prefactor)
 
     # gradient automatically generated; see Example 3 in
