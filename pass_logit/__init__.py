@@ -1,8 +1,6 @@
 from pass_logit.chebyshev import chebyshev_approximation
 from pass_logit import compositions
 
-from collections import ChainMap
-
 from pyspark import RDD
 from pyspark.mllib.regression import LabeledPoint
 # https://docs.sympy.org/latest/modules/ntheory.html#sympy.ntheory.multinomial.multinomial_coefficients
@@ -65,7 +63,7 @@ def get_approx_log_like_op(
 
     theta = tt.dvector('theta')
 
-    theta_ks = tt.prod((theta**tt.as_tensor(monomial_exponents)), axis=1) 
+    theta_ks = tt.prod((theta**tt.as_tensor(monomial_exponents)), axis=1)
 
     loglike_var = tt.dot(theta_ks, prefactor)
 
@@ -91,7 +89,7 @@ def get_acoefs(d, M, monomial_exponents, R):
     quick_multinomial_coef = dict()
     for n in range(M+1):
         quick_multinomial_coef.update(multinomial_coefficients(d, n))
-    
+
     acoefs = []
     for monomial_exp in monomial_exponents:
         # could be saved previously rather than recomputed here
