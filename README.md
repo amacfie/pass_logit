@@ -36,9 +36,9 @@ required).
 * `xs`. Numpy array of shape `(n, d)` where `n` is number of data points,
   `d` is dimension of feature space.
 * `ys`. Numpy array of shape `(n,)`, where each value is ±1.
-* `M`. Chebyshev polynomial degree. Set to `2` or `6`. Higher values cause
+* `M`. Degree of Chebyshev approximation. Set to `2` or `6`. Higher values cause
   much slower running time but higher accuracy.
-* `R`. Radius of interval used to determine Chebyshev polynomial.
+* `R`. Radius of interval used to determine Chebyshev series.
 
 The paper suggests that `R`=4 is appropriate for many datasets. The error
 of the approximate log logistic function can be high if its argument is
