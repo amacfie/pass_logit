@@ -1,7 +1,7 @@
 # pass_logit
 
-PySpark implementation of approximate Bayesian logistic regression algorithm
-from
+PySpark (Python 3) implementation of approximate Bayesian logistic regression
+algorithm from
 
 Jonathan Huggins, Ryan Adams, and Tamara Broderick (2017).
 ["PASS-GLM: polynomial approximate

@@ -7,6 +7,9 @@ setup(name='pass_logit',
       author='Andrew MacFie',
       author_email='andrew222651@fastmail.com',
       license='MIT',
+      classifiers=[
+        'Programming Language :: Python :: 3',
+      ],
       packages=['pass_logit'],
       install_requires=['pyspark', 'numpy', 'sympy', 'theano']
       zip_safe=False
